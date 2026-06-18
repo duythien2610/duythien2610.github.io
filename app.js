@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navToggle && navLinksContainer) {
         navToggle.addEventListener('click', () => {
             navLinksContainer.classList.toggle('active');
-            // Toggle icon between menu and x
             const icon = navToggle.querySelector('i');
             if (navLinksContainer.classList.contains('active')) {
                 icon.setAttribute('data-lucide', 'x');
@@ -38,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - 200)) {
+            if (pageYOffset >= (sectionTop - 240)) {
                 current = section.getAttribute('id');
             }
         });
@@ -75,70 +74,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Could not copy text: ', err);
             });
         });
-    }
-
-    // 4. Interactive Canvas Particles Background
-    const canvas = document.getElementById('particles-canvas');
-    if (canvas) {
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        const maxParticles = 60;
-
-        const resizeCanvas = () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        };
-
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 0.5;
-                this.speedX = Math.random() * 0.4 - 0.2;
-                this.speedY = Math.random() * 0.4 - 0.2;
-                this.opacity = Math.random() * 0.5 + 0.1;
-            }
-
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-
-                // Wrap around edges
-                if (this.x > canvas.width) this.x = 0;
-                if (this.x < 0) this.x = canvas.width;
-                if (this.y > canvas.height) this.y = 0;
-                if (this.y < 0) this.y = canvas.height;
-            }
-
-            draw() {
-                ctx.fillStyle = `rgba(157, 78, 221, ${this.opacity})`;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        const initParticles = () => {
-            particles = [];
-            for (let i = 0; i < maxParticles; i++) {
-                particles.push(new Particle());
-            }
-        };
-
-        initParticles();
-
-        const animate = () => {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                p.update();
-                p.draw();
-            });
-            requestAnimationFrame(animate);
-        };
-
-        animate();
     }
 });

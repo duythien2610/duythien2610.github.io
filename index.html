@@ -8,14 +8,14 @@
     <meta name="author" content="Duy Thien">
     <meta property="og:title" content="Duy Thien | IT Business Analyst Portfolio">
     <meta property="og:description" content="Explore Business Analysis case studies, process mapping tools, and project management SaaS designed by Duy Thien.">
-    <meta property="og:image" content="assets/edtronaut-b2b-case-study-.png">
+    <meta property="og:image" content="assets/avatar-headshot.jpg">
     <meta property="og:type" content="website">
     <title>Duy Thien | IT Business Analyst Portfolio</title>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Serif for Headings, Sans-serif for Body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -24,26 +24,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background Canvas for Particles -->
-    <canvas id="particles-canvas"></canvas>
-    
-    <!-- Ambient Blur Gradients -->
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
 
     <!-- Header / Navbar -->
-    <header class="glass-header">
+    <header class="editorial-header">
         <div class="container navbar">
-            <a href="#" class="logo">
-                <span class="gradient-text">duythien.BA</span>
-            </a>
+            <a href="#" class="logo">Duy Thien</a>
             <nav class="nav-links">
-                <a href="#hero" class="active">Home</a>
-                <a href="#profile">About &amp; Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">BA Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#hero" class="active">About me</a>
+                <a href="#about">Resume</a>
+                <a href="#projects">Work</a>
+                <a href="#contact" class="btn-pill">Get in touch!</a>
             </nav>
             <div class="nav-toggle" id="nav-toggle">
                 <i data-lucide="menu"></i>
@@ -53,339 +43,371 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="container hero-content">
-                <div class="badge fade-in">
-                    <span class="pulse-dot"></span> Open to IT Business Analyst Internships / Junior Roles
+        <section id="hero" class="hero-editorial">
+            <!-- Big Outline Text in Background -->
+            <div class="bg-outline-text select-none">PORTFOLIO PORTFOLIO PORTFOLIO</div>
+            
+            <div class="container hero-grid">
+                <!-- Left: Framed standing photo -->
+                <div class="hero-image-wrapper">
+                    <div class="image-frame">
+                        <img src="assets/avatar-standing.jpg" alt="Duy Thien portrait standing" class="hero-photo">
+                        <!-- Retro stars decoration -->
+                        <span class="star-decor star-1">✦</span>
+                        <span class="star-decor star-2">✦</span>
+                    </div>
                 </div>
-                <h1 class="hero-title fade-in-delay-1">
-                    Bridging Business Needs &amp; <span class="gradient-text">Technical Solutions</span>
-                </h1>
-                <p class="hero-subtitle fade-in-delay-2">
-                    I'm Duy Thien, a Management Information Systems (MIS) student. I specialize in requirements engineering, workflow modeling (BPMN 2.0), and turning vague requirements into concrete product backlogs.
-                </p>
-                <div class="hero-actions fade-in-delay-3">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>Explore BA Portfolio</span>
-                        <i data-lucide="folder-kanban"></i>
-                    </a>
-                    <a href="#profile" class="btn btn-secondary">
-                        <span>View Credentials</span>
-                        <i data-lucide="user-check"></i>
-                    </a>
+                
+                <!-- Right: Content & Quick links -->
+                <div class="hero-text-block">
+                    <h1 class="hero-large-title">PORTFOLIO</h1>
+                    <p class="hero-intro-text">
+                        I love analyzing systems and modeling workflows. I approach problems in a rational and pragmatic way, seeking the simplest and most functional solutions possible.
+                    </p>
+                    
+                    <div class="hero-quick-info">
+                        <div class="info-row">
+                            <span class="info-label">GitHub:</span>
+                            <a href="https://github.com/duythien2610" target="_blank">/duythien2610</a>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Email:</span>
+                            <a href="mailto:33doduythien@gmail.com">33doduythien@gmail.com</a>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Title:</span>
+                            <span>IT Business Analyst</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="#profile" class="scroll-down">
-                <i data-lucide="chevron-down" class="bounce-anim"></i>
+            
+            <!-- Circular Scroll down button -->
+            <a href="#about" class="scroll-down-badge">
+                <span>Scroll down</span>
             </a>
         </section>
 
-        <!-- Profile & Education Section -->
-        <section id="profile" class="about-section section-padding">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-tag">Academic Profile</span>
-                    <h2>Education &amp; Achievements</h2>
+        <!-- About & Intro Section -->
+        <section id="about" class="about-editorial">
+            <div class="container about-grid">
+                <!-- Left Column: Biography -->
+                <div class="about-bio">
+                    <h2 class="editorial-heading">Hello,<br>I'm Thien !</h2>
+                    <p class="bio-paragraph">
+                        I am an IT Business Analyst student based in Vietnam, pursuing a Bachelor's degree in Management Information Systems. I focus on eliciting requirements, optimizing processes, and designing system specifications that bridge the gap between business objectives and technical implementation.
+                    </p>
+                    <a href="https://github.com/duythien2610" target="_blank" class="btn-oval">
+                        <span>View GitHub Profile</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
                 </div>
-                <div class="about-grid">
-                    <div class="about-card glass-panel main-profile">
-                        <div class="profile-avatar">
-                            <i data-lucide="graduation-cap" class="avatar-icon"></i>
+                
+                <!-- Right Column: Profile image with overlay badges -->
+                <div class="about-card-wrapper">
+                    <div class="about-profile-card">
+                        <div class="profile-img-container">
+                            <img src="assets/avatar-headshot.jpg" alt="Duy Thien headshot" class="about-photo">
                         </div>
-                        <h3>Duy Thien</h3>
-                        <p class="profile-role">IT Business Analyst / Product Analyst</p>
-                        <p class="profile-desc">
-                            Management Information Systems student at HUB. Equipped with strong analytical skills, process mapping competency, and technical literacy to facilitate seamless communication between stakeholders and development teams.
-                        </p>
                         
-                        <div class="education-details">
-                            <div class="edu-item">
-                                <i data-lucide="school" class="icon-muted"></i>
-                                <span><strong>Ho Chi Minh University of Banking</strong><br>MIS Major (09/2023 - Present)</span>
+                        <!-- Badges -->
+                        <span class="floating-badge badge-date">GPA: 3.4 / 4.0</span>
+                        <span class="floating-badge badge-lang">TOEIC 790</span>
+                        
+                        <!-- Contact Box -->
+                        <div class="profile-contact-box">
+                            <h4>Contact</h4>
+                            <div class="contact-details">
+                                <p><i data-lucide="map-pin"></i> Ho Chi Minh City, VN</p>
+                                <p><i data-lucide="mail"></i> 33doduythien@gmail.com</p>
+                                <p><i data-lucide="school"></i> Banking University HCMC</p>
                             </div>
-                            <div class="edu-item">
-                                <i data-lucide="award" class="icon-cyan"></i>
-                                <span><strong>GPA: 3.4 / 4.0</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume & Skills (Block split) -->
+        <section class="resume-editorial">
+            <div class="container resume-grid">
+                <!-- Left: Timelines -->
+                <div class="resume-left-col">
+                    <!-- Education -->
+                    <div class="resume-block">
+                        <h3 class="resume-block-title">Education</h3>
+                        <div class="resume-timeline">
+                            <div class="timeline-row">
+                                <span class="timeline-year">✦ 2023 - Present</span>
+                                <div class="timeline-desc">
+                                    <strong>Ho Chi Minh University of Banking</strong>
+                                    <p>Bachelor of Management Information Systems</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="about-card glass-panel skills-panel">
-                        <h3>Certifications &amp; Honors</h3>
-                        <div class="credentials-list">
-                            <div class="credential-item">
-                                <div class="cred-header">
-                                    <span class="cred-title"><i data-lucide="shield-check" class="icon-primary"></i> Microsoft Office Specialist (MOS)</span>
-                                    <span class="cred-desc">Word, Excel, PowerPoint proficiency</span>
+                    <!-- Experience -->
+                    <div class="resume-block">
+                        <h3 class="resume-block-title">Experience</h3>
+                        <div class="resume-timeline">
+                            <div class="timeline-row">
+                                <span class="timeline-year">✦ 2026 - Present</span>
+                                <div class="timeline-desc">
+                                    <strong>IT Business Analyst Talent Program</strong>
+                                    <span class="sub-desc">Techcamp Academy</span>
+                                    <p>Gathering requirements, BPMN, user stories, and backlog management in real-world case simulations.</p>
                                 </div>
                             </div>
-                            <div class="credential-item">
-                                <div class="cred-header">
-                                    <span class="cred-title"><i data-lucide="languages" class="icon-cyan"></i> TOEIC 790 / 990</span>
-                                    <span class="cred-desc">Professional working English proficiency</span>
-                                </div>
-                            </div>
-                            <div class="credential-item">
-                                <div class="cred-header">
-                                    <span class="cred-title"><i data-lucide="trophy" class="icon-yellow"></i> Informatics Olympiad Consolation Prize (2025)</span>
-                                    <a href="https://bit.ly/4fjpAvg" target="_blank" class="cred-link">Verify <i data-lucide="external-link"></i></a>
-                                </div>
-                            </div>
-                            <div class="credential-item">
-                                <div class="cred-header">
-                                    <span class="cred-title"><i data-lucide="trophy" class="icon-yellow"></i> Informatics Olympiad 2nd Place (Silver - 2026)</span>
-                                    <a href="https://vnshort.com/uEN0" target="_blank" class="cred-link">Verify <i data-lucide="external-link"></i></a>
+                            <div class="timeline-row">
+                                <span class="timeline-year">✦ 10/2025 - 01/2026</span>
+                                <div class="timeline-desc">
+                                    <strong>SEO &amp; Product Optimization Intern</strong>
+                                    <span class="sub-desc">Asianasa Group</span>
+                                    <p>Mapped workflows, identified customer gaps, prioritized backlogs for 50+ SKUs, and communicated findings to stakeholders.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section section-padding">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-tag">Career Journey</span>
-                    <h2>Work Experience</h2>
+                    <!-- Honors -->
+                    <div class="resume-block">
+                        <h3 class="resume-block-title">Honors &amp; Awards</h3>
+                        <div class="resume-timeline">
+                            <div class="timeline-row">
+                                <span class="timeline-year">✦ 2026</span>
+                                <div class="timeline-desc">
+                                    <strong>University Informatics Olympiad - 2nd Place</strong>
+                                    <a href="https://vnshort.com/uEN0" target="_blank" class="text-link">Verify <i data-lucide="external-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="timeline-row">
+                                <span class="timeline-year">✦ 2025</span>
+                                <div class="timeline-desc">
+                                    <strong>University Informatics Olympiad - Consolation Prize</strong>
+                                    <a href="https://bit.ly/4fjpAvg" target="_blank" class="text-link">Verify <i data-lucide="external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="timeline">
-                    <!-- Experience 1 -->
-                    <div class="timeline-item left glass-panel">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2026 - Present</div>
-                        <div class="timeline-content">
-                            <h3>IT Business Analyst Talent Program Member</h3>
-                            <span class="company-tag">Techcamp Academy</span>
-                            <ul class="experience-bullets">
-                                <li>Completed advanced BA/PO training focusing on requirements gathering, BPMN workflow design, user stories, and backlog management.</li>
-                                <li>Practiced elicitation techniques, stakeholder communication, and structured business documentation through real-world business case simulations.</li>
-                            </ul>
+                <!-- Right: Skills -->
+                <div class="resume-right-col">
+                    <div class="resume-block">
+                        <h3 class="resume-block-title">Technical skills</h3>
+                        
+                        <div class="skills-sub-grid">
+                            <div class="skills-sub-category">
+                                <h4>BA &amp; Software Skills</h4>
+                                <div class="badge-row">
+                                    <span class="skill-tag">BPMN 2.0</span>
+                                    <span class="skill-tag">UML Diagrams</span>
+                                    <span class="skill-tag">User Stories</span>
+                                    <span class="skill-tag">Figma Wireframes</span>
+                                    <span class="skill-tag">Jira / Confluence</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills-sub-category">
+                                <h4>Coding Skills</h4>
+                                <p class="skills-description">Basic knowledge of:</p>
+                                <div class="badge-row">
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">PHP Laravel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-block">
+                        <h3 class="resume-block-title">Language</h3>
+                        <div class="lang-row">
+                            <div class="lang-item">
+                                <strong>English</strong>
+                                <span>TOEIC 790 (Professional working)</span>
+                            </div>
+                            <div class="lang-item">
+                                <strong>Vietnamese</strong>
+                                <span>Native</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Experience 2 -->
-                    <div class="timeline-item right glass-panel">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">10/2025 - 01/2026</div>
-                        <div class="timeline-content">
-                            <h3>SEO &amp; Product Optimization Intern</h3>
-                            <span class="company-tag">Asianasa Group, Ho Chi Minh City</span>
-                            <ul class="experience-bullets">
-                                <li>Collaborated closely with content and product teams to gather product requirements and map out current as-is operational workflows.</li>
-                                <li>Analyzed user behavior and identified 5+ distinct gaps between customer expectations and existing product listings.</li>
-                                <li>Analyzed performance data across 50+ SKUs to prioritize an optimization backlog, applying structured backlog triage methods.</li>
-                                <li>Presented optimization findings to cross-functional stakeholders, aligning content decisions with business goals.</li>
-                            </ul>
+                    <div class="resume-block">
+                        <h3 class="resume-block-title">Hobbies &amp; Interests</h3>
+                        <div class="hobbies-grid">
+                            <div class="hobby-item">
+                                <i data-lucide="music"></i>
+                                <span>Guitar &amp; Music</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i data-lucide="search"></i>
+                                <span>Technology Trends</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i data-lucide="book-open"></i>
+                                <span>Product Research</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- BA Skills Grid -->
-        <section id="skills" class="skills-section section-padding">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-tag">Competencies</span>
-                    <h2>Business Analyst Skill Set</h2>
-                </div>
-                <div class="ba-skills-grid">
-                    <div class="ba-skill-card glass-panel">
-                        <div class="skill-icon-wrapper">
-                            <i data-lucide="git-fork"></i>
-                        </div>
-                        <h3>Process Modeling</h3>
-                        <p>Mapping AS-IS &amp; TO-BE workflows using BPMN 2.0, cross-functional swimlanes, and UML diagrams (Use Case, Activity, Sequence).</p>
-                    </div>
-                    <div class="ba-skill-card glass-panel">
-                        <div class="skill-icon-wrapper">
-                            <i data-lucide="file-text"></i>
-                        </div>
-                        <h3>Requirements Documentation</h3>
-                        <p>Drafting comprehensive Business Requirement Documents (BRD), Software Requirement Specifications (SRS), User Stories (INVEST), and Gherkin Acceptance Criteria.</p>
-                    </div>
-                    <div class="ba-skill-card glass-panel">
-                        <div class="skill-icon-wrapper">
-                            <i data-lucide="layout-template"></i>
-                        </div>
-                        <h3>Wireframing &amp; Prototyping</h3>
-                        <p>Designing interactive UI wireframes, customer journeys, and persona profiles in Figma to validate requirements with stakeholders.</p>
-                    </div>
-                    <div class="ba-skill-card glass-panel">
-                        <div class="skill-icon-wrapper">
-                            <i data-lucide="database"></i>
-                        </div>
-                        <h3>Database Design &amp; SQL</h3>
-                        <p>Creating Entity Relationship Diagrams (ERD) with relational mappings and writing SQL queries to extract and analyze system data.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="projects-section section-padding">
+        <section id="projects" class="projects-editorial">
             <div class="container">
-                <div class="section-header">
-                    <div class="header-left">
-                        <span class="section-tag">Portfolio</span>
-                        <h2>Featured BA Projects</h2>
-                    </div>
-                    <p class="header-desc">
-                        Explore core artifacts, specifications, and tools I have developed to address complex system requirement problems.
+                <div class="projects-section-header">
+                    <h2 class="editorial-heading text-white">Featured BA Projects</h2>
+                    <p class="projects-intro">
+                        Explore core artifacts, specifications, and workflow models I have authored to solve complex system requirement challenges.
                     </p>
                 </div>
-
-                <div class="projects-grid">
-                    <!-- Project 1: Edtronaut B2B Case Study -->
-                    <article class="project-card glass-panel">
-                        <div class="project-image-container">
-                            <img src="assets/edtronaut-b2b-case-study-.png" alt="Edtronaut B2B project screenshot" class="project-img" loading="lazy">
-                            <div class="project-overlay"></div>
+                
+                <div class="editorial-projects-grid">
+                    <!-- Project 1: Edtronaut B2B -->
+                    <div class="editorial-project-card">
+                        <div class="project-img-box">
+                            <img src="assets/edtronaut-b2b-case-study-.png" alt="Edtronaut B2B Case Study screenshot">
                         </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3 class="project-title">Edtronaut B2B — Case Study</h3>
-                                <span class="project-meta-info">Personal Project • June 2026</span>
-                                <div class="project-tags">
-                                    <span class="tag-pill">BPMN 2.0</span>
-                                    <span class="tag-pill">INVEST User Stories</span>
-                                    <span class="tag-pill">MVP Roadmap</span>
-                                </div>
+                        <div class="project-info-box">
+                            <span class="project-date">June 2026</span>
+                            <h3>Edtronaut B2B — Case Study</h3>
+                            <div class="project-pills">
+                                <span>BPMN 2.0</span>
+                                <span>MVP Roadmap</span>
+                                <span>INVEST User Stories</span>
                             </div>
-                            <ul class="project-bullet-list">
+                            <ul class="project-bullets">
                                 <li>Modeled complex workflows using BPMN 2.0 and Cross-Functional Swim lanes, incorporating dynamic routing and closed-loop feedback.</li>
                                 <li>Mapped 6 target personas and designed a 6-week MVP roadmap to pivot a B2C simulation engine.</li>
                                 <li>Authored INVEST User Stories, security/performance specs (RBAC, PII), Gherkin Acceptance Criteria, and built interactive presentation mockups.</li>
                             </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/duythien2610/edtronaut-b2b-case-study-" target="_blank" class="project-link link-primary">
-                                    <i data-lucide="github"></i> View Source Code
+                            <div class="project-action">
+                                <a href="https://github.com/duythien2610/edtronaut-b2b-case-study-" target="_blank" class="btn-oval-small">
+                                    <span>View Source Code</span>
+                                    <i data-lucide="github"></i>
                                 </a>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
                     <!-- Project 2: BPMN Studio -->
-                    <article class="project-card glass-panel">
-                        <div class="project-image-container">
-                            <img src="assets/bpmn-tool.png" alt="BPMN Studio project screenshot" class="project-img" loading="lazy">
-                            <div class="project-overlay"></div>
+                    <div class="editorial-project-card">
+                        <div class="project-img-box">
+                            <img src="assets/bpmn-tool.png" alt="BPMN Studio screenshot">
                         </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3 class="project-title">BPMN Studio — AI Modeling Tool</h3>
-                                <span class="project-meta-info">Personal Project • Apr 2026</span>
-                                <div class="project-tags">
-                                    <span class="tag-pill">BPMN.io</span>
-                                    <span class="tag-pill">AI Integration</span>
-                                    <span class="tag-pill">AS-IS / TO-BE</span>
-                                </div>
+                        <div class="project-info-box">
+                            <span class="project-date">Apr 2026</span>
+                            <h3>BPMN Studio — AI Process Tool</h3>
+                            <div class="project-pills">
+                                <span>BPMN.io</span>
+                                <span>AI Prompt Diagramming</span>
+                                <span>AS-IS / TO-BE</span>
                             </div>
-                            <ul class="project-bullet-list">
+                            <ul class="project-bullets">
                                 <li>Built a simplified process diagramming web app aimed at BA students and junior analysts to lower complexity barriers.</li>
-                                <li>Added an AI chat feature that lets users describe a process in plain text and get a BPMN draft in under 2 minutes, cutting diagramming time.</li>
+                                <li>Added an AI chat feature that lets users describe a process in plain text and get a BPMN draft in under 2 minutes, cutting manual diagramming time.</li>
                                 <li>Supported AS-IS / TO-BE versioning and PNG export so users can document and share process changes easily.</li>
                             </ul>
-                            <div class="project-links">
-                                <a href="https://bpmn-tool.vercel.app" target="_blank" class="project-link link-primary">
-                                    <i data-lucide="external-link"></i> Live App
+                            <div class="project-action">
+                                <a href="https://bpmn-tool.vercel.app" target="_blank" class="btn-oval-small link-demo">
+                                    <span>Live App</span>
+                                    <i data-lucide="external-link"></i>
                                 </a>
-                                <a href="https://github.com/duythien2610/bpmn-tool" target="_blank" class="project-link link-secondary">
-                                    <i data-lucide="github"></i> Source Code
+                                <a href="https://github.com/duythien2610/bpmn-tool" target="_blank" class="btn-oval-small">
+                                    <span>Source Code</span>
+                                    <i data-lucide="github"></i>
                                 </a>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
                     <!-- Project 3: TaskFlow -->
-                    <article class="project-card glass-panel">
-                        <div class="project-image-container">
-                            <img src="assets/BA-Task-Management-SaaS.png" alt="TaskFlow project screenshot" class="project-img" loading="lazy">
-                            <div class="project-overlay"></div>
+                    <div class="editorial-project-card">
+                        <div class="project-img-box">
+                            <img src="assets/BA-Task-Management-SaaS.png" alt="TaskFlow screenshot">
                         </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3 class="project-title">TaskFlow — SaaS Work Management</h3>
-                                <span class="project-meta-info">Personal Project • Apr 2026</span>
-                                <div class="project-tags">
-                                    <span class="tag-pill">BRD &amp; SRS</span>
-                                    <span class="tag-pill">Figma Wireframes</span>
-                                    <span class="tag-pill">Product Backlog</span>
-                                </div>
+                        <div class="project-info-box">
+                            <span class="project-date">Apr 2026</span>
+                            <h3>TaskFlow — SaaS Work Management</h3>
+                            <div class="project-pills">
+                                <span>BRD &amp; SRS</span>
+                                <span>Figma Wireframes</span>
+                                <span>User Stories</span>
                             </div>
-                            <ul class="project-bullet-list">
+                            <ul class="project-bullets">
                                 <li>Gathered and documented business requirements for a task management platform targeting small teams (5–20 users).</li>
                                 <li>Wrote full BA deliverables: BRD, SRS, and 15+ user stories with acceptance criteria aligned to the product backlog.</li>
                                 <li>Designed wireframes in Figma for 4 core screens; collaborated with 2 developers to clarify requirements and reduce back-and-forth.</li>
                             </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/duythien2610/BA-Task-Management-SaaS" target="_blank" class="project-link link-primary">
-                                    <i data-lucide="github"></i> View Source Code
+                            <div class="project-action">
+                                <a href="https://github.com/duythien2610/BA-Task-Management-SaaS" target="_blank" class="btn-oval-small">
+                                    <span>View Source Code</span>
+                                    <i data-lucide="github"></i>
                                 </a>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
                     <!-- Project 4: E-Commerce Bookstore -->
-                    <article class="project-card glass-panel">
-                        <div class="project-image-container">
-                            <img src="assets/bookverse.png" alt="Bookstore project screenshot" class="project-img" loading="lazy">
-                            <div class="project-overlay"></div>
+                    <div class="editorial-project-card">
+                        <div class="project-img-box">
+                            <img src="assets/bookverse.png" alt="E-Commerce Bookstore screenshot">
                         </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3 class="project-title">E-Commerce Bookstore</h3>
-                                <span class="project-meta-info">Team Leader (7 members) • PHP Laravel • Feb 2026</span>
-                                <div class="project-tags">
-                                    <span class="tag-pill">Requirements Analysis</span>
-                                    <span class="tag-pill">ERD Design</span>
-                                    <span class="tag-pill">BPMN Flow</span>
-                                </div>
+                        <div class="project-info-box">
+                            <span class="project-date">Feb 2026</span>
+                            <h3>E-Commerce Bookstore</h3>
+                            <div class="project-pills">
+                                <span>Purchasing Flow</span>
+                                <span>BPMN Diagram</span>
+                                <span>ERD Mapping</span>
                             </div>
-                            <ul class="project-bullet-list">
+                            <ul class="project-bullets">
                                 <li>Led requirement analysis for the end-to-end purchasing flow; identified 5+ gaps in manual order handling.</li>
                                 <li>Documented BPMN diagrams for 3 core system modules.</li>
                                 <li>Designed ERD with 8 entities covering customers, products, payments, and orders.</li>
                             </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/duythien2610/bookverse" target="_blank" class="project-link link-primary">
-                                    <i data-lucide="github"></i> View Source Code
+                            <div class="project-action">
+                                <a href="https://github.com/duythien2610/bookverse" target="_blank" class="btn-oval-small">
+                                    <span>View Source Code</span>
+                                    <i data-lucide="github"></i>
                                 </a>
                             </div>
                         </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section section-padding">
+        <section id="contact" class="contact-editorial">
             <div class="container">
-                <div class="contact-box glass-panel">
-                    <div class="contact-badge">
-                        <i data-lucide="mail"></i> Let's Connect
-                    </div>
-                    <h2>Looking for a BA Talent?</h2>
-                    <p>I'm currently seeking IT Business Analyst intern/junior opportunities where I can apply my requirements engineering, modeling, and system analysis skills. Let's discuss how I can add value to your team.</p>
+                <div class="contact-card-editorial">
+                    <span class="star-decor">✦</span>
+                    <h2>Have an opportunity?</h2>
+                    <p class="contact-intro">
+                        I am actively seeking Business Analyst internships or junior roles. If you're looking for an analyst who understands requirements elicitation, workflow design, and technical data modeling, let's get in touch.
+                    </p>
                     
-                    <div class="contact-actions">
-                        <div class="email-container">
+                    <div class="contact-buttons">
+                        <div class="email-badge">
                             <span class="email-label">EMAIL ME</span>
-                            <div class="email-input-wrapper">
-                                <span class="email-text">33doduythien@gmail.com</span>
-                                <button class="btn-copy" id="btn-copy" title="Copy to clipboard">
+                            <div class="email-badge-row">
+                                <span class="email-address" id="email-address">33doduythien@gmail.com</span>
+                                <button class="copy-icon-btn" id="btn-copy" title="Copy to clipboard">
                                     <i data-lucide="copy"></i>
                                     <span class="tooltip" id="copy-tooltip">Copy</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="divider">or</div>
-                        <a href="https://github.com/duythien2610" target="_blank" class="btn btn-primary btn-large">
+                        <a href="https://github.com/duythien2610" target="_blank" class="btn-oval-large">
                             <i data-lucide="github"></i>
-                            <span>View GitHub Profile</span>
+                            <span>Follow on GitHub</span>
                         </a>
                     </div>
                 </div>
@@ -394,10 +416,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
+    <footer class="editorial-footer">
+        <div class="container footer-row">
             <p>&copy; 2026 Duy Thien. All rights reserved.</p>
-            <p class="credit">IT Business Analyst Portfolio.</p>
+            <p>IT Business Analyst Portfolio.</p>
         </div>
     </footer>
 
